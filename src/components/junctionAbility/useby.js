@@ -6,12 +6,11 @@ export default class UseBy extends React.Component {
 
   getGF() {
     return _.map(this.props.useBy, (names) => {
-      return (<ul><li>{names}</li></ul>)
-    }
-  )
+      return (<li>{names}</li>)
+    })
   }
 
   render() {
-    return (<p><b>GFs:</b> {this.getGF()}</p>)
+    return (<p><b>GFs:</b> <ul>{this.getGF()}</ul></p>)
   }
 }
