@@ -1,10 +1,11 @@
 import React from 'react'
+// import UseBy from './useby.js'
 
 export default class Ability extends React.Component {
 
 
-  render(){
-    return(
+  render() {
+    return (
       <div>
         <div><p>Name: {this.props.name}</p></div>
         <div><p>Cost: {this.props.cost}</p></div>
